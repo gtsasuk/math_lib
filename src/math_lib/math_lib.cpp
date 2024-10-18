@@ -4,9 +4,9 @@
 
 namespace MathLib
 {
-    bool isEqual(double a, double b, double tolerance = 1e-9)
+    bool isEqual(double a, double b, double tolerance)
     {
-        return abs(a - b) < tolerance;
+        return abs(a - b) <= tolerance;
     }
 
     bool isPrime(int n)
@@ -53,5 +53,6 @@ namespace MathLib
 
         return thirdAngle;
     }
+
 }
 
