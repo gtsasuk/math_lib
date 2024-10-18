@@ -42,5 +42,16 @@ namespace MathLib
 		if (b == 0) return a;
 		return GCD(b, a % b);
 	}
+
+    double calculateThirdAngle(double angle1, double angle2){
+        const double totalAngleSum = 180.0;
+        double thirdAngle = totalAngleSum - (angle1 + angle2);
+
+        if (thirdAngle <= 0.0 || thirdAngle >= 180) {
+            throw std::invalid_argument("Invalid anngles provided for a triangle");
+        }
+
+        return thirdAngle;
+    }
 }
 
