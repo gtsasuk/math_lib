@@ -4,9 +4,9 @@
 
 namespace MathLib
 {
-    bool isEqual(double a, double b, double tolerance)
+    bool isEqual(double a, double b, double tolerance = 1e-9)
     {
-        return abs(a - b) <= tolerance;
+        return abs(a - b) < tolerance;
     }
 
     bool isPrime(int n)

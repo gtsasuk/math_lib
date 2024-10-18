@@ -22,7 +22,7 @@ TEST_F(MathLibTestFixture, AddTwoValues)
 {
     EXPECT_EQ(MathLib::add(10.5, 2.5), 13.0);
     EXPECT_TRUE(MathLib::isEqual(MathLib::add(10.5, 2.5), 13.0));
-    EXPECT_FALSE(MathLib::isEqual(MathLib::add(10.5, 2.5), 13.0001));
+    EXPECT_FALSE(MathLib::isEqual(MathLib::add(10.5, 2.5), 13.0000001));
 }
 
 TEST_F(MathLibTestFixture, SubTwoValues)
